@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- Fonte Inter -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<!-- Model Viewer -->
+
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.3.1/model-viewer.min.js"> </script>
+
+<title>Modelo em Realidade Aumentada</title> </head>
+
+<body>
+
+<model-viewer alt="Modelo 3D em realidade aumentada" src="modelo.glb" ios-src="modelo.usdz" ar ar-modes="webxr scene-viewer quick-look" camera-controls touch-action="pan-y" shadow-intensity="1" auto-rotate style="width: 100%; height: 500px;">
+
+<button
+  slot="ar-button"
+  style="
+    background-color: #f58220;
+    color: #ffffff;
+    border: none;
+    border-radius: 28px;
+    font-family: 'Inter', sans-serif;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+  ">
+  Ver em realidade aumentada
+</button>
+
+</model-viewer>
+
+</body> </html>
